@@ -1,0 +1,27 @@
+.about-title {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding-bottom: 2rem;
+  justify-content: center;
+  word-spacing: 1px;
+}
+
+.content-title {
+  text-align: center;
+}
+
+.about-img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .about-section {
+    grid-template-columns: 2fr 1fr;
+  }
+}

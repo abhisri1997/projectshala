@@ -1,0 +1,39 @@
+.main-nav {
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.mobile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-row: 1;
+}
+
+.links-list {
+  display: none;
+}
+
+.menu-icon:hover {
+  cursor: pointer;
+}
+
+.mobile-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-direction: none;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .links-list {
+    display: flex;
+    grid-row: 1;
+    gap: 1rem;
+  }
+}
