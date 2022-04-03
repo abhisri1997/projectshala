@@ -6,10 +6,12 @@ const Header = () => {
     <div className="wrapper">
       <div className="header-content">
         <div className="header-title">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
-          ad, obcaecati aspernatur sunt corporis neque temporibus dignissimos
-          recusandae consectetur quos incidunt aliquam eum, ipsam dolorum
-          delectus consequuntur excepturi laboriosam ullam.
+          We provide the best solution within the best deliverable time
+          possible. This is a professional association for research assistance
+          and content writing services in the field of science, arts, social
+          sciences, education, engineering etc. With an experienced team and
+          access to multiple resources and tools we guarantee quality work
+          completed in accordance with the provided instructions and time frame
         </div>
         <div className="header-form">
           <div className="card">
