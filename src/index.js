@@ -19,9 +19,9 @@ root.render(
         <Route path="services" element={<Services />} />
         <Route path="about" element={<About />} />
       </Route>
-      <Route path="header" element={<Header />} />
-      <Route path="services" element={<Services />} />
-      <Route path="about" element={<About />} />
+      <Route path="/header" element={<Header />} />
+      <Route path="/services" element={<Services />} />
+      <Route path="/about" element={<About />} />
     </Routes>
   </BrowserRouter>
 );
