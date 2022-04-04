@@ -1,7 +1,17 @@
+.no-wrapper.nav {
+  background-color: #0375b4;
+}
 .main-nav {
   padding: 2rem 0;
   display: grid;
   grid-template-columns: 1fr;
+}
+
+.fixed-nav {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+  z-index: 9999;
 }
 
 .mobile-nav {
@@ -13,6 +23,14 @@
 
 .links-list {
   display: none;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+#root > div.no-wrapper.nav > div > nav > ul > li:nth-child(1) > a {
+  color: #ffce00;
 }
 
 .menu-icon:hover {

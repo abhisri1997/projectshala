@@ -1,8 +1,28 @@
+.no-wrapper.header {
+  background-color: #0375b4;
+}
+
 .header-content {
-  margin: 3rem 0;
+  padding: 3rem 0;
   display: grid;
   grid-template-rows: auto auto;
   gap: 1.5rem;
+}
+
+.quote-icon {
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  color: #ffce00;
+  transform: rotate(4deg);
+}
+
+.header-title {
+  position: relative;
+  align-self: center;
+  font-size: 1.2rem;
+  font-weight: 100;
+  font-style: italic;
 }
 
 .card {
@@ -11,6 +31,7 @@
   text-align: center;
   padding: 2rem;
   border-radius: 2%;
+  background-color: #fff;
 }
 
 .card-title {
