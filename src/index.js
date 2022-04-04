@@ -18,10 +18,41 @@ root.render(
         <Route path="header" element={<Header />} />
         <Route path="services" element={<Services />} />
         <Route path="about" element={<About />} />
+        <Route
+          path="*"
+          element={
+            <main
+              style={{
+                marginTop: "2rem",
+                padding: "1rem",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <p>There's nothing here!</p>
+            </main>
+          }
+        />
       </Route>
       <Route path="/header" element={<Header />} />
       <Route path="/services" element={<Services />} />
       <Route path="/about" element={<About />} />
+      <Route
+        path="*"
+        element={
+          <main
+            style={{
+              padding: "1rem",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <p>There's nothing here!</p>
+          </main>
+        }
+      />
     </Routes>
   </BrowserRouter>
 );
