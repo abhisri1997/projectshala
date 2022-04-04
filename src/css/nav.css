@@ -28,6 +28,35 @@
 
 .nav-links a {
   color: #fff;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.nav-links a,
+.nav-links a::after,
+.nav-links a::before {
+  transition: all 0.5s;
+}
+
+.nav-links a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #fff;
+  height: 1px;
+}
+
+.nav-links a:hover:after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #000;
 }
 
 #root > div.no-wrapper.nav > div > nav > ul > li:nth-child(1) > a {
@@ -43,6 +72,10 @@
   gap: 1rem;
   margin-top: 2rem;
   flex-direction: none;
+}
+
+.mobile-links li a {
+  font-size: 3vmin;
 }
 
 @media screen and (min-width: 800px) {
