@@ -39,7 +39,9 @@ const Nav = () => {
               const { id, text, url } = link;
               return (
                 <li key={id} className="nav-links">
-                  <Link to={url}>{text}</Link>
+                  <Link to={url} onClick={() => setIsToggled(false)}>
+                    {text}
+                  </Link>
                 </li>
               );
             })}
