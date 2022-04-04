@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import nav from "../data/nav";
 import "../css/nav.css";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [isToggled, setIsToggled] = useState(false);
@@ -24,7 +25,7 @@ const Nav = () => {
             const { id, text, url } = link;
             return (
               <li key={id}>
-                <a href={url}>{text}</a>
+                <Link to={url}>{text}</Link>
               </li>
             );
           })}
