@@ -25,7 +25,9 @@ const Nav = () => {
         <nav className="main-nav">
           <div className="mobile-nav">
             <div className="logo">
-              <h1>Projectshala</h1>
+              <Link to="/">
+                <h1>Projectshala</h1>
+              </Link>
             </div>
             <div className="menu-icon">
               <FiMenu
